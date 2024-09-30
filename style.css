@@ -1,0 +1,163 @@
+/* --- 02 COLORS */
+
+/* Primary Colors */
+/* --primary-color-1: #e5ece5 
+--primary-color-2: #9ebaac
+--primary-color-3: #bfcbd8  */
+
+
+/* Lightest Grey */
+ #767676 /* Allowed on #fff */
+ #6f6f6f /* Allowed on #e7ede7 */
+
+/* Darkest Color */
+/* --black: #000000 */
+
+/* Lightest Color */
+/* --white: #ffffff */
+
+/* --- 03 BUTTONS */
+
+/* Primary Colors */
+/* --primary-color-1: #e5ece5 
+   --primary-color-2: #9ebaac 
+   --primary-color-3: #bfcbd8 */
+
+/* Shades */
+/* #7e958a #6f8278 #5f7067 #4f5d56 #3f4a45 #2f3834 #202522 #101311 
+   #99a2af #868e99 #737a83 #60666e #4c5158 #393d42 #26292c #131416 */
+
+/* Tints */
+/* #f5f8f7 #ecf1ee #e2eae6 #cfddd6 #c5d6cd #bbcfc5 #b1c8bd #a8c1b4 
+   #f9fafb #f2f5f8 #eceff4 #dfe5ed #d9e0e9 #d2dbe6 #ccd5e2 #c5d0df */
+
+
+/* --- 04 GENERAL STYLES */
+body {
+    background-color: #f5f8f7; /* Lightest background color */
+    color: #4c5158; /* General text color */
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Lightest Grey */
+.header {
+    background-color: #e2eae6; /* Header background color */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.heading-primary {
+    font-size: 3rem;
+    color: #3f4a45; /* Header text color */
+}
+
+/* Navigation */
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #7e958a; /* Navigation link color */
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: #5f7067; /* Hover effect color for navigation links */
+}
+
+/* Section Styles */
+.section {
+    padding: 60px 0;
+}
+
+.section-introduction,
+.section-evidence,
+.section-reflections,
+.section-conclusion {
+    background-color: #f9fafb; /* Section background color */
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.heading-secondary {
+    font-size: 2.4rem;
+    color: #202522; /* Secondary heading color */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.text {
+    font-size: 1.6rem;
+    color: #99a2af; /* Text color for paragraphs */
+    text-align: center;
+}
+
+/* Reflections Section */
+.reflection-week {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #e2eae6; /* Background color for reflection entries */
+    border-radius: 8px;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+}
+
+.annotation {
+    font-size: 1.4rem;
+    color: #4f5d56; /* Annotation text color */
+    margin-top: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #6f8278; /* Footer background color */
+    padding: 20px 0;
+    text-align: center;
+    color: #ffffff; /* Footer text color */
+}
+
+/* Image and Code Snippets */
+.evidence-image {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+/* Code Screenshot Container */
+.code-screenshot-container {
+    display: flex;
+    justify-content: center; /* Centers the image */
+    margin: 20px 0; /* Adds space around the image */
+}
+
+/* Code Screenshot Image */
+.code-screenshot {
+    max-width: 90%;
+    height: auto;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds shadow for 3D effect */
+    padding: 10px; /* Optional padding for spacing */
+    background-color: #f5f8f7; /* Matches the background to the page color */
+}
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    background-color: #bfcbd8; /* Button background color */
+    color: #ffffff; /* Button text color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.6rem;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #4f5d56; /* Button hover effect color */
+}
