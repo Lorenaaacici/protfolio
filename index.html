@@ -8,16 +8,82 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
+    <!-- Cover Section -->
+    <section id="cover" class="section-cover">
+        <div class="cover-content">
+            <div class="welcome-explore">
+                <h1 class="heading-primary">Welcome<br> to<br> <span class="portfolio-highlight">Xixi's Portfolio</span></h1>
+                <a href="https://deco1800teams-t17-freitag.uqcloud.net/DECO7180/index.html" class="cover-button">Explore the Project BriSentinel &rarr;</a>
+            </div>
+            <!-- Carousel Container -->
+            <div class="carousel-container">
+                <div class="carousel">
+                    <!-- Card 1 - Help Page -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="media/cover.png" alt="Help Page Image">
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <h3>Help Page</h3>
+                                    <p>Explains risk analysis tools, property prediction, and dynamic maps.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Card 2 - Map -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="media/map.png" alt="Map">
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <h3>Interactive Map</h3>
+                                    <p>Explore Feature</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Card 3 - Profile -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="media/profile.png" alt="Profile Page Image">
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <h3>Profile Page</h3>
+                                    <p>View Profile</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Add more cards as needed... -->
+                </div>
+            
+                <!-- Carousel Navigation Buttons -->
+                <button class="carousel-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="carousel-btn next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+        </div>
+            <!-- Scroll Down Arrow linking to the header -->
+        <a href="#header" class="scroll-arrow">
+            <i class="fas fa-angle-down"></i>
+        </a>
+
+    </section>
+
     <!-- Header Section -->
-    <header class="header">
+    <header id="header">
         <div class="container">
-            <h1 class="heading-primary">Annotated Process Portfolio</h1>
             <nav class="nav">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="#introduction" class="nav-link">Introduction</a></li>
-                    <li class="nav-item"><a href="#evidence" class="nav-link">Evidence</a></li>
+                    <li class="nav-item"><a href="#about-me" class="nav-link">About Me</a></li>
+                    <li class="nav-item"><a href="#project-overview" class="nav-link">Project Overview</a></li>
+                    <li class="nav-item"><a href="#process-documentation" class="nav-link">Process & Evidence</a></li>
                     <li class="nav-item"><a href="#reflections" class="nav-link">Reflections</a></li>
                     <li class="nav-item"><a href="#conclusion" class="nav-link">Conclusion</a></li>
                 </ul>
@@ -25,32 +91,169 @@
         </div>
     </header>
 
-    <!-- Introduction Section -->
-    <section id="introduction" class="section section-introduction">
+
+    <!-- About Me Section -->
+    <section id="about-me" class="section section-about">
         <div class="container">
-            <h2 class="heading-secondary">Introduction</h2>
-            <p class="text">This portfolio presents a curated account of my individual contributions, design decisions, and key insights throughout the semester. It showcases both the intended concept and the final product, reflecting the journey of the project.</p>
+            <h2 class="heading-secondary">About Me</h2>
+            <div class="about-content">
+                <img src="media/my photo.webp" alt="My Photo" class="about-photo">
+                <div class="about-text">
+                    <p>Hello! I'm HU XIXI, a Master of Interaction Design student at the University of Queensland (UQ). I have experience working as a User Experience Research Intern, where I explored user needs and contributed to in-depth user research.</p>
+                    <p>I believe in user-centered design and strive to create accessible, creative, and inclusive solutions. My design process revolves around understanding user needs, ensuring usability, and delivering aesthetically pleasing experiences.I am dedicated to becoming an excellent UX Designer and Product Manager. </p>
+                    <p>Feel free to reach out: <a href="mailto:123456@example.com" class="email-link">123456@example.com</a></p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Evidence Section -->
-    <section id="evidence" class="section section-evidence">
+    <!-- Project Overview Section -->
+    <section id="project-overview" class="section section-project-overview">
         <div class="container">
-            <h2 class="heading-secondary">Evidence of Work</h2>
-            <figure class="evidence-item">
-                <img src="path/to/image1.jpg" alt="Sketch of Design Concept" class="evidence-image">
-                <figcaption class="annotation">Sketch showing the initial design concept and layout of the application interface.</figcaption>
-            </figure>
-            <figure class="evidence-item">
-                <img src="path/to/image2.jpg" alt="Wireframe of Prototype" class="evidence-image">
-                <figcaption class="annotation">Wireframe of the low-fidelity prototype used for early-stage user testing.</figcaption>
-            </figure>
-            <div class="code-screenshot-container">
-                <img src="media/Screenshot-code1.png" alt="Code Snippet Screenshot" class="code-screenshot">
+            <h2 class="heading-secondary">Project Overview</h2>
+            <h3 class="overview-title">Brisentinel</h3>
+            <div class="overview-content">
+                <div class="text-column">
+                    <p class="text">
+                        "Brisentinel" is a platform that integrates property listings with essential risk assessment data, such as flood zones and crime rates, to help users make informed real estate decisions. The platform features an intuitive interface that allows users to explore properties through an interactive map.
+                    </p>
+                    <p class="text">
+                        By visualizing key data points, "Brisentinel" aims to enhance user decision-making and prioritize accessibility. This portfolio outlines the design and development process, covering key challenges, iterations, and design principles used to create a user-centered and functional platform.
+                    </p>
+                </div>
+                <div class="image-container"></div>
+                    <img src="media/interaction plan.jpg" alt="website interaction plan">
+                    <span class="img-description">website interaction plan</span>
+                </div>
             </div>
-            <p class="annotation">This code snippet demonstrates the styling used for the buttons in the prototype, emphasizing a clean and modern design.</p>
+            <!-- Design Concept Section -->
+            <section id="design-concept" class="section section-design-concept">
+                <div class="container">
+                    <h3 class="overview-title">Design Concept</h3>
+                        <div class="content-container">
+                            <div class="text-column">
+                                <p class="text">
+                                    The design concept focuses on creating an intuitive and user-friendly interface that prioritizes accessibility and interactivity. This section covers the initial inspirations, research, and key design principles considered during the development process.
+                                </p>
+                        
+                                <p class="text">
+                                    Our approach prioritizes accessibility, ease of navigation, and visual interactivity. Throughout the development, we focused on key principles such as responsive design, intuitive layouts, and engaging data visualizations. This section outlines our inspirations, research, and the core design principles that shaped "Brisentinel," along with the development of its primary pages and features.
+                                </p>
+                            </div>
+                            <!-- Page Plan Bullet Points with Icons -->
+                            <div class="list-container">
+                                <h4>Page Plan</h4>
+                                <ul class="page-plan-list">
+                                    <li><i class="fas fa-map-marked-alt"></i> Map Page</li>
+                                    <li><i class="fas fa-project-diagram"></i> Forecast Page</li>
+                                    <li><i class="fas fa-home"></i> Listing Page</li>
+                                    <li><i class="fas fa-question-circle"></i> Help Page</li>
+                                    <li><i class="fas fa-user"></i> Profile Page</li>
+                                </ul>
+                            </div>
+                    
+                            <!-- Key Functions Bullet Points with Icons -->
+                            <div class="list-container">
+                                <h4>Key Functions</h4>
+                                <ul class="key-functions-list">
+                                    <li><i class="fas fa-globe"></i> Disaster Risk Mapping</li>
+                                    <li><i class="fas fa-chart-line"></i> Interactive Comparisons</li>
+                                    <li><i class="fas fa-lightbulb"></i> Recommendations</li>
+                                    <li><i class="fas fa-shield-alt"></i> Crime Rate</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <figure class="design-concept-figure">
+                        <img src="media/ConceptSketch.png" alt="Initial Design Sketch" class="design-concept-image">
+                        <figcaption class="annotation">Initial sketch illustrating the design concept's layout and user flow.</figcaption>
+                    </figure>
+                </div>
+            </section>
+
         </div>
     </section>
+
+    <!-- Process Section -->
+    <section id="process-documentation" class="section section-process-documentation">
+        <div class="container">
+            <h2 class="heading-secondary">Process & Evidence</h2>
+
+            <!-- 4A: Ideation and Research -->
+            <h3>4A: Ideation and Research</h3>
+            <h4>Progress and Contribution</h4>
+            <p class="text">
+                <strong>Group Progress:</strong> During this phase, our team brainstormed potential solutions for the gaps in existing real estate platforms. Together, we developed the initial design concept and identified key datasets, such as bushfire, flood, and crime data, that would inform our project. The group collectively decided to use an interactive map as the primary tool for risk assessment.
+            </p>
+            <p class="text">
+                <strong>My Contribution:</strong> I conducted an in-depth evaluation of the selected datasets to assess their feasibility for integration. I proposed the idea of using an interactive map to visualize the data effectively. Additionally, I created documentation summarizing user needs and proposed features based on the group discussions.
+            </p>
+            <figure class="project-figure">
+                <img src="path/to/4a-research.png" alt="Initial Research Findings" class="project-image">
+                <figcaption class="annotation">Initial research findings focusing on data integration for risk assessment.</figcaption>
+            </figure>
+            <figure class="project-figure">
+                <img src="path/to/4a-ideation.png" alt="Group Ideation Session" class="project-image">
+                <figcaption class="annotation">Group ideation session discussing potential features and data integration.</figcaption>
+            </figure>
+
+            <!-- 4B: Design and Prototyping -->
+            <h3>4B: Design and Prototyping</h3>
+            <h4>Progress and Contribution</h4>
+            <p class="text">
+                <strong>Group Progress:</strong> In this phase, our team developed the initial wireframes and sketches of the platform's user interface. We explored various design layouts and discussed user-centered design principles to ensure a smooth user experience. The group reviewed the wireframes and provided feedback for further refinement.
+            </p>
+            <p class="text">
+                <strong>My Contribution:</strong> I took the lead in creating detailed wireframes using Figma, focusing on designing the layout for the interactive map and property listings. I also sketched user flow diagrams to demonstrate how users would interact with different platform features.
+            </p>
+            <figure class="project-figure">
+                <img src="path/to/4b-wireframes.png" alt="Wireframes" class="project-image">
+                <figcaption class="annotation">Wireframes created in Figma, highlighting the layout for the interactive map.</figcaption>
+            </figure>
+            <figure class="project-figure">
+                <img src="path/to/4b-group-sketches.png" alt="Group Wireframe Sketches" class="project-image">
+                <figcaption class="annotation">Group wireframe sketches showcasing the layout options for the platform.</figcaption>
+            </figure>
+
+            <!-- 4C: MVP Development -->
+            <h3>4C: MVP Development</h3>
+            <h4>Progress and Contribution</h4>
+            <p class="text">
+                <strong>Group Progress:</strong> During the MVP development, our team worked on integrating the interactive map using the Leaflet API. We collaborated on coding basic functionalities, testing the map's zoom, pan, and data filtering features.
+            </p>
+            <p class="text">
+                <strong>My Contribution:</strong> My primary responsibility was coding the map's functionalities and developing JavaScript functions for real-time data filtering. I also implemented an MVC (Model-View-Controller) architecture to improve the separation of data management and the user interface.
+            </p>
+            <figure class="project-figure">
+                <img src="path/to/4c-map-integration.png" alt="Map Integration" class="project-image">
+                <figcaption class="annotation">Map integration using Leaflet API, featuring data filtering and interactive elements.</figcaption>
+            </figure>
+            <figure class="project-figure">
+                <img src="path/to/4c-code-snippet.png" alt="Code Snippet" class="project-image">
+                <figcaption class="annotation">JavaScript code snippet illustrating the data filtering logic using the MVC pattern.</figcaption>
+            </figure>
+
+            <!-- 4D: Final Prototype and Refinements -->
+            <h3>4D: Final Prototype and Refinements</h3>
+            <h4>Progress and Contribution</h4>
+            <p class="text">
+                <strong>Group Progress:</strong> In this phase, our team conducted user testing to gather feedback, focusing on areas such as map responsiveness, data visualization, and accessibility. We discussed key refinements based on the feedback.
+            </p>
+            <p class="text">
+                <strong>My Contribution:</strong> I was responsible for implementing the carousel-style display for saved properties on the profile page and improving the map's responsiveness. I also integrated accessibility features, such as keyboard navigation and enhanced color contrast.
+            </p>
+            <figure class="project-figure">
+                <img src="path/to/4d-final-prototype.png" alt="Final Prototype" class="project-image">
+                <figcaption class="annotation">Final prototype showcasing UI enhancements and accessibility features.</figcaption>
+            </figure>
+            <figure class="project-figure">
+                <img src="path/to/4d-user-testing.png" alt="User Testing" class="project-image">
+                <figcaption class="annotation">Group user testing session identifying key areas for final prototype refinement.</figcaption>
+            </figure>
+        </div>
+    </section>
+
 
     <!-- Reflections Section -->
     <section id="reflections" class="section section-reflections">
@@ -89,11 +292,29 @@
         </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer class="footer">
-        <div class="container">
-            <p class="text">&copy; 2024 Annotated Process Portfolio</p>
-        </div>
-    </footer>
+    <script src="scrollHighlight.js"></script>
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel .card');
+
+        // Ensure only the first slide is visible initially
+        slides.forEach((slide, index) => {
+        if (index !== 0) {
+            slide.style.display = 'none';
+        }
+        });
+
+        function changeSlide(direction) {
+        // Hide the current slide
+        slides[currentSlide].style.display = 'none';
+        // Calculate the next slide index
+        currentSlide = (currentSlide + direction + slides.length) % slides.length;
+        // Show the new slide
+        slides[currentSlide].style.display = 'block';
+        }
+
+        // Initial display of the first image
+        slides[currentSlide].style.display = 'block';
+    </script>
 </body>
 </html>
