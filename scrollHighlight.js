@@ -21,3 +21,22 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
+
+// Scroll trigger to animate the feedback-solution section
+window.addEventListener('scroll', function() {
+    const feedbackSolutions = document.querySelectorAll('.feedback-solution');
+
+    feedbackSolutions.forEach(function(fs) {
+        const rect = fs.getBoundingClientRect();
+        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+        // Check if the feedback-solution is visible in the viewport
+        if (rect.top <= windowHeight && rect.bottom >= 0) {
+            fs.classList.add('show');
+        }
+    });
+});
+
+
+
